@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Michael's Webpage</title>
+</head>
+
+<body class="backgroundImg">
+    <div>
+        <nav class="navbar fixed-top navbar-expand-sm navbar-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">Michael's Webpage</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active ">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Bio.html">Bio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Experience.html">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Projects.html">Projects<span class="sr-only">(Current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Skills.html">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href='Resume.docx'download>Resume</a>
+                        </li>
+                
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+<!--  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="section-heading m-5">Projects</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-cols-1 d-flex justify-content-center align-items-center">
+            
+            <div class="col text-center d-flex justify-content-center align-items-center item item1 ">
+                <a href="#wordlemodal " class="page-link" data-bs-toggle="modal">
+                    Wordle Game Replica</a>
+            </div>
+            <div class="col text-center d-flex justify-content-center align-items-center item item2">
+                <a href="#metromodal" class="page-link" data-bs-toggle="modal">
+                    UVA Metro</a>
+            </div>
+            <div class="col text-center d-flex justify-content-center align-items-center item item3">
+                <a href="#apportionmentmodal " class="page-link" data-bs-toggle="modal">
+                    Apportionment</a>
+            </div>
+            <div class="col text-center d-flex justify-content-center align-items-center item item4 ">
+                <a href= "#personalwebsiteemodal" class ="page-link" data-bs-toggle="modal">
+                    Website</a>
+            </div>
+        </div>
+    </div>
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#wordlemodal">
+    Launch demo modal
+  </button> -->
+
+    <!-- wordle Modal -->
+    <div class="modal " id="wordlemodal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-body " style="font-weight:bold; font-size:35px">Wordle Replica </h5>
+                </div>
+                <div class="modal-body text-body" style="font-size:25px">
+                    I was able to replicate of the game wordle. This project was produced with Java, JavaFX,
+                    scenebuilder, and gradle with
+                    MVC approach. Also, there were numerous tests and J-unit tests that were done such as putting the
+                    logic to make sure
+                    the word exists in the dictionary,
+                    number of allowed guesses, and the hardest part was making sure the guesses would show the correct
+                    color on each column.
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/myk200207/WordleReplica" class="btn btn btn-light mx-auto"
+                        target="_blank">Github</a>
+                    <button type="button" class="btn btn btn-light mx-auto" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- metro modal -->
+    <div class="modal " id="metromodal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-body " style="font-weight:bold; font-size:35px">UVA metro  </h5>
+                </div>
+                <div class="modal-body text-body" style="font-size:25px">
+                    I created a command-line IU that allowed users to look up the correct bus and busline to take to go 
+                    a certain stop. I was able to download the JSON file from the UVA metro website and 
+                    used JSON object manipulation with java to produce this application. Also used SQL database
+                    to store the bus lines and stops that corresponds with each other and singleton to allow single access/read
+                    to the JSON file. Lastly, used J-unit test to make sure the application worked properly.
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/myk200207/UVA-busline" class="btn btn btn-light mx-auto"
+                        target="_blank">Github</a>
+                    <button type="button" class="btn btn btn-light mx-auto" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- apportionment modal -->
+    <div class="modal " id="apportionmentmodal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-body " style="font-weight:bold; font-size:35px">Congress Apportionment </h5>
+                </div>
+                <div class="modal-body text-body" style="font-size:25px">
+                    I created an application that calculated the correct apportionment ( the number of seatings in the congress ) for each state.
+                    There were three historical apportionment strategies, Hamilton, Jefferson, and Hungintonhill, that were implemented. The app showed
+                    the pros and cons of each strategies. I read in CSV and excel file using Java and used top-down and factory implementation to 
+                    build this application. Through this project, I was able to learn how to organize and structure multiple modals and classes to handle
+                    large number of datas and write code that is easily maintainable and loosely coupled.
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/myk200207/Apportionment" class="btn btn btn-light mx-auto"
+                        target="_blank">Github</a>
+                    <button type="button" class="btn btn btn-light mx-auto" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- website Modal -->
+
+    <div class="modal " id="personalwebsiteemodal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-body " style="font-weight:bold; font-size:35px">This is my personal
+                        website description and github link</h5>
+                </div>
+                <div class="modal-body text-body" style="font-size:25px">
+                     This website was built using mainly HTML,CSS, bootstrap, and javascript. This was built before I started my first job
+                     and web development skills have improved and changed significantly. Although this website lacks, hope you liked it!
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/myk200207/myk200207.github.io" class="btn btn-secondary mx-auto"
+                        target="_blank">Github</a>
+                    <button type="button" class="btn btn-secondary mx-auto" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container justify-content-center d-flex">
+        <div class="p-2"><a class="page-link" href="/Experience.html" style="font-size:300%"> <svg
+                    xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                    class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                </svg></a></div>
+        <div class="p-2"><a class="page-link" href="/Skills.html" style="font-size:300%"> <svg
+                    xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                    class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                </svg></a></div>
+    </div>
+
+
+
+</body>
+
+</html>

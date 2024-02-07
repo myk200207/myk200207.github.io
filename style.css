@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Roboto+Condensed:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Ephesis', cursive;
+    font-weight:bold;
+}
+
+.card-text {
+    color: white;
+}
+
+html,
+body{
+    min-height: 100%;
+    overflow-x: hidden;
+   
+}
+
+.backgroundImg {
+    background-image: url("christmasBackground2..jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    width: 100%;
+}
+
+.c-item {
+    height: 700px;
+}
+
+.c-img {
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+
+}
+.item1{
+    background-image: url(Wordle.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+.item2{
+    background-image: url(metro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+.item3{
+    background-image: url(apportionment.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+.item4{
+    background-image: url(webpage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+.item {
+    height: 200px;
+    width: 200px;
+    border-radius:50%;
+    filter:grayscale(100%);
+    border:2px solid white;
+    cursor:pointer;
+    font-size:25px;
+    color:black;
+    
+    
+}
+.item:hover {
+    transform :scale(1.1);
+    transition: 0.5s ease;
+    filter:grayscale(0%);
+    z-index:1;
+}
+
+myModal.in{
+    z-index: 999999;
+}
+

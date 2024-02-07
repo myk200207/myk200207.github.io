@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Michael's Webpage</title>
+</head>
+
+<body class="backgroundImg">
+    <div>
+        <nav class="navbar fixed-top navbar-expand-sm navbar-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">Michael's Webpage</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active ">
+                            <a class="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Bio.html">Bio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Experience.html">Experience <span class="sr-only">(Current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Skills.html">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href='Resume.docx'download>Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading m-5">Experience</h2>
+            </div>
+        </div>
+    </div>
+    <div id="ExpCarousel" class="carousel slide mx-auto" data-bs-ride="carousel" style="width:75%">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#ExpCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#ExpCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#ExpCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <!-- first item -->
+            <div class="carousel-item active c-item">
+                <div class="card mx-auto bg-transparent" style="width: 15rem; border:none;">
+                    <img class="card-img-top" src="airforce.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h1 class="card-text text-center">Air Force</h1>
+                        <h2 class="card-text text-center">2017-2021</h2>
+                        <h4 class="card-text text-center">I served as a medic under 55th Medical Group at Offutt AFB,
+                            Nebraska from 2017-2020.
+                            I had the priviledge to work with bright family physicians. From 2020-2021 during the Covid
+                            Crisis, I was deployed to Al Udeid AFB
+                            and worked at the ER</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- second item -->
+            <div class="carousel-item c-item">
+                <div class="card mx-auto bg-transparent" style="width: 15rem; border:none;">
+                    <img class="card-img-top" src="UVA.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h1 class="card-text text-center">University of Virginia</h1>
+                        <h2 class="card-text text-center">2021-2023</h2>
+                        <h4 class="card-text text-center">After my service in the Air Force. I had the priviledge to
+                            attend UVA, one of the top universities in the nation.
+                            Within two years, I managed to complete Bachelor of Computer Science degree by taking 21
+                            credits during the normal semesters and 18 credits during summer.
+                        </h4>
+                    </div>
+                </div>
+
+            </div>
+            <!-- third item -->
+            <div class="carousel-item c-item">
+                <div class="card mx-auto bg-transparent" style="width: 18rem; border:none;">
+                    <img class="card-img-top" src="SPA.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h1 class="card-text text-center">System Planning and Analysis Inc.</h1>
+                        <h2 class="card-text text-center">2023-Present</h2>
+                        <h4 class="card-text text-center"> After graduation, I was hired to be a software developer for
+                            a group called NTAG at SPA. This job gave me opportunities to work on
+                            web development ( HTML, CSS, typescript ), write scripts for data analysis ( R and Python Gui ),
+                            and etc.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <button class="carousel-control-prev" type="button" data-bs-target="#ExpCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon d-none d-md-block" aria-hidden="true"></span>
+            <span style="font-size:25px;">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#ExpCarousel" data-bs-slide="next">
+            <span style="font-size:25px;">Next</span>
+            <span class="carousel-control-next-icon d-none d-md-block" aria-hidden="true"></span>
+        </button>
+
+
+
+    </div>
+
+    <div class="container justify-content-center d-flex">
+        <div class="p-2"><a class="page-link" href="/Bio.html" style="font-size:300%"> <svg
+                    xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                    class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                </svg></a></div>
+        <div class="p-2"><a class="page-link" href="/Projects.html" style="font-size:300%"> <svg
+                    xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                    class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                </svg></a></div>
+    </div>
+
+
+</body>
+
+</html>
