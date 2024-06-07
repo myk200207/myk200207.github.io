@@ -3,15 +3,19 @@
 * {
     margin: 0;
     padding: 0;
-    color: white;
+    color: darkblue;
     font-family: 'Ephesis', cursive;
     font-weight:bold;
 }
-
-.card-text {
-    color: white;
+.nav-link {
+    color:darkblue;
 }
-
+.navbar-brand{
+    color:darkblue;
+}
+.card-text {
+    color: darkblue !important;
+}
 html,
 body{
     min-height: 100%;
@@ -20,7 +24,7 @@ body{
 }
 
 .backgroundImg {
-    background-image: url("christmasBackground2..jpg");
+    background-image: url("summer.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -71,7 +75,7 @@ body{
     width: 200px;
     border-radius:50%;
     filter:grayscale(100%);
-    border:2px solid white;
+    border:2px solid darkblue;
     cursor:pointer;
     font-size:25px;
     color:black;
